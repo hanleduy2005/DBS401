@@ -229,7 +229,7 @@ form table tr:hover td {
     background: transparent;
 }
 
-input[type="text"], input[type="password"], select {
+input[type="text"], input[type="password"], input[type="email"], input[type="date"], select, textarea {
     width: 100%;
     padding: 0.8rem 1rem;
     background: rgba(0, 0, 0, 0.3);
@@ -240,7 +240,14 @@ input[type="text"], input[type="password"], select {
     transition: all 0.3s ease;
 }
 
-input[type="text"]:focus, input[type="password"]:focus, select:focus {
+/* Ensure textarea has a decent default height and font family */
+textarea {
+    min-height: 120px;
+    resize: vertical;
+    font-family: 'Inter', sans-serif;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="date"]:focus, select:focus, textarea:focus {
     outline: none;
     border-color: var(--accent-neon);
     box-shadow: 0 0 0 3px rgba(0, 240, 255, 0.1);
