@@ -241,7 +241,7 @@ systemctl restart apache2 2>&1 || warn "Could not restart apache2"
 # ──────────────────────────────────────────────
 echo ""
 echo "╔══════════════════════════════════════════════════════════╗"
-echo "║       DBS401 SQL Injection Playground — Ready!         ║"
+echo "║       DBS401 SQL Injection Playground — Ready!           ║"
 echo "╚══════════════════════════════════════════════════════════╝"
 echo ""
 echo "  Local access:  http://localhost/task-manager/"
